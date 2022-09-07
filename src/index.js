@@ -1,17 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {Isabel} from '../src/Isabel/Isabel.js'
+import { Menu } from '../src/Menu/Menu.js'
+//{Isabel} es como si existiera esa etiqueta en html
+//en el index se renderizan los componentes que construyen el html en js
+let nombre = <h1>Hola mundo</h1>
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(<Menu></Menu>)
